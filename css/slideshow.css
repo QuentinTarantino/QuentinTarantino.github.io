@@ -108,8 +108,27 @@ img {
     height: 1000px;
     object-fit: cover;
     object-position: 55% 50%;
-    border-width: 5px; 
-    border-style: solid; 
-    border-color: rgba(255, 255, 255, 1); 
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 1);
     border-radius: 15px;
+}
+
+/* for no explosions once mobile moment */
+@media screen and (max-width: 500px) {
+    img {
+        width: 388px;
+        height: 370px;
+        object-fit: cover;
+        object-position: 55% 50%;
+        border-width: 5px;
+        border-style: solid;
+        border-color: rgba(255, 255, 255, 1);
+        border-radius: 15px;
+    }
+
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+    }
 }
